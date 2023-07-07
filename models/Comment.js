@@ -31,5 +31,14 @@ Comment.init(
                 key: 'id'
             }
         }
+    },
+    {
+        sequelize,
+        timestamp: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'comment'
     }
-)
+);
+
+module.exports = Comment;
