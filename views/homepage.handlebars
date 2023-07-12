@@ -1,3 +1,14 @@
 <div>
     <h1>HOMEPAGE</h1>
+    <div>
+        {{#each posts as |post|}}
+            <p>
+                {{post.title}}
+                {{post.user_id}}
+            </p>
+            <p>
+                {{post.content}}
+            </p>
+        {{/each}}
+    </div>
 </div>
