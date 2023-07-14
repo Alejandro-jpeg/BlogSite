@@ -1,0 +1,13 @@
+<div>
+    <h1>{{title}}</h1>
+    <h2>by {{user.username}}</h2>
+    <div>
+        {{content}}
+    </div>
+    {{#each comments as |comment|}}
+        <div>
+            {{comment.content}}
+            by: {{user.username}}
+        </div>
+    {{/each}}
+</div>
