@@ -14,8 +14,11 @@
             <a href="/">Home</a>
             <a href="/dashboard">Dashboard</a>
             <a href="/signup"></a>
+            {{#if loggedIn}}
+            <a href="/logout">Logout</a>
+            {{else}}
             <a href="/login">Login</a>
-            <a href="/logout">Logout</a> {{!--  TODO: solo si esta loggeade --}}
+            {{/if}}
         </nav>
         </header>
 
