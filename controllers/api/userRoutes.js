@@ -9,7 +9,7 @@ router.post('/login', async (req, res) => {
             return;
         }
 
-        const userPass = await.userData.checkPassword(req.body.password);
+        const userPass = await userData.checkPassword(req.body.password);
         if (!userPass) {
             res.status(400).json({message: 'Incorrect Login Information, please try again'});
             return;
@@ -25,3 +25,5 @@ router.post('/login', async (req, res) => {
         res.status(400).json(err);
     }
 });
+
+module.exports = router;
