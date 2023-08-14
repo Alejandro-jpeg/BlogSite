@@ -1,4 +1,3 @@
-const router = require("../../controllers/api/postRoutes");
 
 const newPostHandler = async (event) =>{
     event.preventDefault();
@@ -6,7 +5,7 @@ const newPostHandler = async (event) =>{
     const newTitle = document.querySelector('#new-post-title').value.trim();
     const content = document.querySelector('#new-post-content').value.trim();
 
-    if (title && content) {
+    if (newTitle && content) {
         const response = await fetch('/api/posts', {
             method: 'POST',
             body: JSON.stringify({ newTitle, content }),
@@ -23,4 +22,4 @@ const newPostHandler = async (event) =>{
     }
 };
 
-module.exports = router;
+document.querySelector('#post-button').addEventListener('click', newPostHandler);
