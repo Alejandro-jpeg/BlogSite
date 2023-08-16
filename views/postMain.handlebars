@@ -4,10 +4,21 @@
     <div>
         {{content}}
     </div>
+    <div>
+        <h3>Comments</h3>
+        <form >
+            <label for="">Add Comment:</label>
+            <textarea id="post-comment"></textarea>
+            <input type="hidden" id="post_id"value="{{id}}">
+            <button id="comment-button" type="submit" >Comment</button>
+        </form>
+
     {{#each comments as |comment|}}
         <div>
             {{comment.content}}
             by: {{user.username}}
         </div>
     {{/each}}
+    </div>
 </div>
+<script src="/js/comment.js"></script>
