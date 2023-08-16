@@ -1,9 +1,9 @@
-    <h1>DASHBOARD</h1>
-    <h2>Welcome {{username}}</h2>
+    <div class="dashboard-section">
+    <h1>Welcome {{username}}</h1>
     <section>
         <h3>Add new post</h3>
         <div>
-            <form>
+            <form class="new-post">
                 <input type="text" id="new-post-title" placeholder="Post Title">
                 <input type="text" id="new-post-content" placeholder="Post Content">
                 <button type="submit" id="post-button">Submit</button>
@@ -25,5 +25,7 @@
         <p>You havent created a post yet</p>
     </section>
     {{/if}}
+    </div>
+
 
     <script src="./js/dashboard.js"></script>
