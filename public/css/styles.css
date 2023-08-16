@@ -1,4 +1,73 @@
+/* univesal styles */
+:root{
+    --main-accent-color:#334b8b;
+    --bg-color:#4f6d9b;
+    --accent:#53b4bb;
+}
+
 header{
     display: flex;
-    background-color: #ffc0cb;
+    flex-direction: column;
+    background-color: var(--main-accent-color);
+    align-items: center;
+}
+
+nav{
+    justify-self: end;
+    border: solid;
+    border-color:var(--accent) ;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding-bottom: 2rem;
+    background-color: var(--main-accent-color)
+}
+
+.homepage-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    border-color: var(--accent);
+    margin: 2rem;
+}
+
+.post-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-accent-color);
+}
+.comment-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    border-color: var(--accent);
+    margin: 2rem;
+}
+
+.comment-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.individual-comment{
+    background-color: var(--main-accent-color);
 }

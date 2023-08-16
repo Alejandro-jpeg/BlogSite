@@ -1,12 +1,12 @@
-<div>
+<div class="homepage-section">
     <h1>HOMEPAGE</h1>
     <div>
         {{#each posts as |post|}}
-        <div>
-            <p>
-                {{post.title}}
-                {{user.username}}
-            </p>
+        <div class="post-card">
+            <div class="post-header" >
+                <h3>{{post.title}}</h3>
+                <p>{{user.username}}</p>
+            </div>
             <p>
                 {{post.content}}
             </p>

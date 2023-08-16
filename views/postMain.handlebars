@@ -1,20 +1,23 @@
-<div>
-    <h1>{{title}}</h1>
-    <h2>by {{user.username}}</h2>
+<div class="comment-main">
+
+    <div class="comment-header">
+        <h1>{{title}}</h1>
+        <h2>by {{user.username}}</h2>
+    </div>
     <div>
         {{content}}
     </div>
     <div>
-        <h3>Comments</h3>
-        <form >
+        <form class="post-card">
             <label for="">Add Comment:</label>
             <textarea id="post-comment"></textarea>
             <input type="hidden" id="post_id"value="{{id}}">
             <button id="comment-button" type="submit" >Comment</button>
         </form>
 
+        <h3>Comments</h3>
     {{#each comments as |comment|}}
-        <div>
+        <div class="individual-comment">
             {{comment.content}}
             by: {{user.username}}
         </div>
