@@ -36,6 +36,9 @@ To install dependencies use the following command :
 
 ## Demo
 
+Here is how the page looks: 
+
+![Screenshot](./asset/screenshot.jpg)
 
 Deployed Page:  https://secure-mesa-75503-7cc807613d26.herokuapp.com/
 
